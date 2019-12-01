@@ -1,0 +1,360 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+
+\usepackage{hyperref}
+\usepackage{url}
+
+% generally i use verbose
+\usepackage[sorting=none,backend=bibtex,style=ieee,maxbibnames=99,maxcitenames=99]{biblatex}
+\addbibresource{references_consistent_Jul2019.bib}
+%\addbibresource{references_bold_consistent.bib}
+%\addbibresource{references.bib}
+% consistent uses Daniel J Tward everywhere
+% I think there is an issue here
+
+
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+\def\name{Daniel Jacob Tward, PhD}
+
+\hypersetup{
+  colorlinks = true,
+  linkcolor = black,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {biomedical engineering, neuroimaging, shape analysis},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+% Customize page headers
+\usepackage{fancyhdr}
+
+\usepackage{lastpage}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+
+\cfoot{\thepage { of } \pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0pt}
+%\lhead{\name} % put it on second page
+\lhead{}
+
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+
+\usepackage{enumitem}
+\newlength{\dateindent}
+\setlength{\dateindent}{0.8in}
+%\setlist[itemize]{leftmargin=\dateindent}
+
+
+\newcommand{\comment}[1]{}
+
+
+\begin{document}
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.jhu.edu/}{Johns Hopkins University} \\
+  \href{http://kavlijhu.org}{Kavli Neuroscience Discovery Institute}%\\
+%  Clark Hall\\
+  %Baltimore, MD 21218
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (443) 762-7576\\
+    %Fax: &  (410) 516-4594 \\
+    Email: & \href{mailto:dtward@cis.jhu.edu}{\tt dtward@cis.jhu.edu} \\
+%    Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+  \end{tabular}
+\end{minipage}
+
+
+\newcommand{\dancol}[2]{%
+\begin{minipage}{5.9in}%
+#1 %
+\end{minipage}~%
+\begin{minipage}{0.6in}%
+\hfill%
+#2%
+\end{minipage}%
+\vspace{1em}%
+}
+
+
+
+\section*{Education}
+
+
+\dancol{\textbf{The Johns Hopkins University School of Medicine}, Baltimore, MD\\
+PhD in Biomedical Engineering}{2017}
+
+\dancol{\textbf{University of Toronto}, Toronto, ON, Canada\\HBSc in physics and physiology (dual specialization)\\Conferred with high distinction}{2008}
+
+
+\section*{Professional Experience}
+\setlist[itemize]{leftmargin=0.2in}
+
+
+\dancol{\textbf{Assistant Research Professor}
+Johns Hopkins University, \\Department of Biomedical Engineering\\
+\vspace{-0.3in}
+\begin{itemize}[noitemsep]
+\item 
+
+
+Developed brain analysis and mapping techniques that cross spatial scales, for multiple species and image modalities, including serial sectioning, brain clearing (CLARITY/iDISCO), and synaptic labeling with sub micron resolution.  
+
+
+%Brain mapping crossing scales in multiple species connecting behavioral scale and MR scales in human to animal species in cleared brains and .... at micron scales.
+
+
+\end{itemize}
+}{2019-}
+
+
+\dancol{\textbf{Kavli Distinguished Postdoctoral Fellow} mentored by Dr. Juan Troncoso (Department of Pathology) and Dr. Michael Miller (Department of Biomedical Engineering) \\
+Johns Hopkins University, Kavli Neuroscience Discovery Institute\\
+\vspace{-0.3in}
+\begin{itemize}[noitemsep]
+\item 
+%Bridging the gap between longitudinal clinical imaging and autopsy findings in Alzheimer's disease.
+
+%Developed multi modality image mapping and analysis techniques, connecting the micron to the mm scale.
+
+Developed computational tools to connect longitudinal clinical human MR at millimeter scale to histopatholgy at micron scale, a crucial gap in our understanding of Alzheimer's progression and diagnosis. 
+
+
+%Brain mapping crossing scales in multiple species connecting behavioral scale and MR scales in human to animal species in cleared brains and .... at micron scales.
+
+
+\end{itemize}
+}{2017-19}
+
+\dancol{\textbf{Graduate Research Assistant} mentored by Dr. Michael Miller\\
+Johns Hopkins University School of Medicine, Center for Imaging Science\\
+\vspace{-0.3in}
+\begin{itemize}[noitemsep]
+\item Designed parsimonious representations of anatomical variability in a Bayesian setting, and robust algorithms for computing structural imaging biomarkers of neurodegenerative disease.
+\end{itemize}}
+{2009-17}
+
+\dancol{\textbf{Research Assistant} mentored by Dr. Jeffrey Siewerdsen\\
+Image Guided Therapy Group, Department of Biophysics and Bioimaging, Ontario Cancer Institute, University Health Network\\
+\vspace{-0.3in}
+\begin{itemize}[noitemsep]
+\item 
+%Theoretically and experimentally investigating the image quality of 3D cone-beam computed tomography and tomosynthesis within a task-specific framework.
+Created an experimentally verified theoretical model for image quality in 3D cone-beam computed tomography and tomosynthesis, using detector physics and human psychophysics.
+\end{itemize}
+}{2007-09}
+
+\dancol{\textbf{Summer Student} mentored by Dr. Jeffrey Siewerdsen\\
+Department of Medical Biophysics, University of Toronto\\
+\vspace{-0.3in}
+\begin{itemize}[noitemsep]
+\item 
+%Examining limits of imaging performance in low x-ray dose cone-beam computed tomography and dual energy radiography, designing tools for evaluation of image quality using human observer performance.
+Established low dose limits for adequate imaging performance in cone-beam computed tomography and dual energy radiography. Designed computational tools for evaluating image quality using human observer performance.
+\end{itemize}
+}{2005-06}
+
+
+
+
+\setlist[enumerate]{leftmargin=0.2in}
+
+\section*{Recent Publications}
+
+
+\begin{enumerate}
+
+\item 
+\fullcite{tward2019estimating}
+
+\item
+\fullcite{kulason2018corticala}
+
+\item 
+\fullcite{lee2018variational}
+
+\item 
+\fullcite{vogelstein2018community}
+
+\item
+\fullcite{miller2018computational}
+
+\item 
+\fullcite{tward2017entorhinal}
+\item 
+\fullcite{tward2017complexity}
+\item 
+\fullcite{tward2017parametric}
+
+\item 
+\fullcite{faria2016linking}
+
+\item 
+\fullcite{segars2015development}
+\item 
+\fullcite{miller2015network}
+
+
+\comment{
+\item 
+\fullcite{mahon2015morphometry}
+\item 
+\fullcite{miller2015amygdalar}
+
+\item 
+\fullcite{norris2014set}
+
+\item 
+\fullcite{tward2013robust}
+\item 
+\fullcite{segars2013population}
+
+\item 
+\fullcite{pineda2012beyond}
+\item 
+\fullcite{li2012effects}
+
+\item 
+\fullcite{tward2011patient}
+\item 
+\fullcite{gang2011analysis}
+
+\item 
+\fullcite{gang2010anatomical}
+
+\item \fullcite{tward2009noise}
+
+\item \fullcite{tward2008cascaded}
+
+\item \fullcite{tward2007soft}
+\item \fullcite{williams2007optimal}
+}
+\end{enumerate}
+
+\comment{
+\section*{Manuscripts under review}
+\begin{enumerate}
+\item \fullcite{tward2019diffeomorphic}
+\end{enumerate}
+
+\section*{Peer Reviewed Conference Proceedings}
+\begin{enumerate}
+
+
+
+\item \fullcite{tward2017unbiased}
+\item \fullcite{tward2017performance}
+
+\item \fullcite{tward2016reducing}
+\item \fullcite{tward2016tools}
+\item \fullcite{sturgeon2016eigenbreasts}
+
+\item \fullcite{norris2014development}
+\item \fullcite{tward2014improved}
+\item \fullcite{jain2014computational}
+
+\item \fullcite{gang2010generalized}
+
+\item \fullcite{yoon2009analysis}
+
+
+\item \fullcite{pineda2008analysis}
+\item \fullcite{tward2008cascadeda}
+\item \fullcite{richard2008neq}
+
+\item \fullcite{shkumat2007development}
+\end{enumerate}
+
+
+\section*{Abstracts}
+\begin{enumerate}
+
+
+\item \fullcite{tward2019equivolumetric}
+
+\item \fullcite{tward2019linking}
+
+
+\item \fullcite{graves2018imaging}
+
+\item \fullcite{branch2018registration}
+
+\item \fullcite{tward2018quantification} % aaic 2018, need aaic sue 2018
+
+\item \fullcite{kulason2018cortical}
+
+\item \fullcite{tward2018speech}
+
+\item \fullcite{lee2017computational}
+
+\item %\fullcite{tward2017tools}
+
+\fullcite{tward2017tools}
+
+\item \fullcite{tward2016local}
+
+\item \fullcite{tward2015changes}
+
+\item \fullcite{kulason2014anatomical}
+
+\item \fullcite{norris2013mo}
+
+\item \fullcite{bond2012series}
+
+\item \fullcite{tward2011generating}
+
+\item \fullcite{gang2010th}
+
+\item \fullcite{bian2009sparse}
+\item \fullcite{gang2009ff}
+\item \fullcite{pineda2009mo}
+
+
+\item \fullcite{tward2008we}
+\item \fullcite{richard2007we}
+
+\item \fullcite{siewerdsen2006th}
+\end{enumerate}
+
+
+\section*{Book Chapters}
+\begin{enumerate}
+\item \fullcite{miller2015bayesian}
+\end{enumerate}
+
+}
+
+\end{document}
